@@ -14,11 +14,12 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"fmt"
-	"github.com/bogdanfinn/utls/internal/boring"
-	"golang.org/x/crypto/chacha20poly1305"
-	"golang.org/x/sys/cpu"
 	"hash"
 	"runtime"
+
+	"github.com/3zSoftware/utls/internal/boring"
+	"golang.org/x/crypto/chacha20poly1305"
+	"golang.org/x/sys/cpu"
 )
 
 // CipherSuite is a TLS cipher suite. Note that most functions in this package
