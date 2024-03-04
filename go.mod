@@ -1,4 +1,4 @@
-module github.com/bogdanfinn/utls
+module github.com/3zSoftware/utls
 
 go 1.20
 
@@ -18,3 +18,5 @@ require (
 )
 
 require golang.org/x/text v0.13.0 // indirect
+
+replace github.com/bogdanfinn/utls => github.com/3zSoftware/utls v1.6.1
