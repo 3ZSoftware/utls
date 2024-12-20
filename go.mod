@@ -19,5 +19,5 @@ require (
 )
 
 require golang.org/x/text v0.20.0 // indirect
-replace github.com/bogdanfinn/utls => github.com/3zSoftware/utls v1.6.2-0.20240304190453-336a5b43596e
+replace github.com/bogdanfinn/utls => github.com/3zSoftware/utls v1.6.3
 
