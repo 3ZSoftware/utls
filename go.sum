@@ -1,3 +1,5 @@
+github.com/3zSoftware/utls v0.0.0-20241220005614-d54a16b14996 h1:rKaGe7a/sWgNDk0FwW+ZwSYz7haO6YGqnyEU9JW3qqw=
+github.com/3zSoftware/utls v0.0.0-20241220005614-d54a16b14996/go.mod h1:C3tqT0ZX2b7F/Ai/00g17wA4wmt6Mgm9kw7GMfyIfWI=
 github.com/andybalholm/brotli v1.1.1 h1:PR2pgnyFznKEugtsUo0xLdDop5SKXd5Qf5ysW+7XdTA=
 github.com/andybalholm/brotli v1.1.1/go.mod h1:05ib4cKhjx3OQYUY22hTVd34Bc8upXjOLL2rKwwZBoA=
 github.com/cloudflare/circl v1.5.0 h1:hxIWksrX6XN5a1L2TI/h53AGPhNHoUBo+TD1ms9+pys=

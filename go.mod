@@ -8,8 +8,8 @@ retract (
 )
 
 require (
-	github.com/bogdanfinn/utls v0.0.0-00010101000000-000000000000
 	github.com/andybalholm/brotli v1.1.1
+	github.com/bogdanfinn/utls v0.0.0-00010101000000-000000000000
 	github.com/cloudflare/circl v1.5.0
 	github.com/klauspost/compress v1.17.11
 	github.com/quic-go/quic-go v0.48.1
@@ -19,5 +19,5 @@ require (
 )
 
 require golang.org/x/text v0.20.0 // indirect
-replace github.com/bogdanfinn/utls => github.com/3zSoftware/utls v1.6.3
 
+replace github.com/bogdanfinn/utls => github.com/3zSoftware/utls v0.0.0-20241220005614-d54a16b14996
