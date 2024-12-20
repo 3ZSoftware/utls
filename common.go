@@ -1490,23 +1490,19 @@ func (c *Config) writeKeyLog(label string, clientRandom, secret []byte) error {
 	}
 	// B: write to the env SSLKEYLOGFILE
 	if sslKeyLogFilePath != "" {
-		fmt.Println("[KEYLOG] Writing SSLKEYLOG to: " + sslKeyLogFilePath)
 		sslKeyLogFile, err := os.OpenFile(sslKeyLogFilePath, os.O_RDWR|os.O_CREATE|os.O_APPEND, 0600)
 		if err != nil {
-			fmt.Println("[KEYLOG] Error opening SSLKEYLOG file: " + err.Error())
-			return err
+			return fmt.Errorf("[KEYLOG] Error opening SSLKEYLOG file: %w", err)
 		}
 		_, err = sslKeyLogFile.Write(logLine)
 		if err != nil {
-			fmt.Println("[KEYLOG] Error writing SSLKEYLOG file: " + err.Error())
-			return err
+			return fmt.Errorf("[KEYLOG] Error writing SSLKEYLOG file: %w", err)
 		}
 		// closing the file to make sure that everything get's flushed to disk
 		// yes, this will
 		err = sslKeyLogFile.Close()
 		if err != nil {
-			fmt.Println("[KEYLOG] Error closing SSLKEYLOG file: " + err.Error())
-			return err
+			return fmt.Errorf("[KEYLOG] Error closing SSLKEYLOG file: %w", err)
 		}
 	}
 	writerMutex.Unlock()
